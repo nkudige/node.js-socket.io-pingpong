@@ -16,10 +16,6 @@ server.listen(app.get('port'), function() {
     console.log("Socket dashboard server listening at port: " + app.get('port'));
 });
 
-//server.listen(80);
-//console.log("Socket.io server listening at localhost:" + 80);
-
-
 var sio = require('socket.io').listen(server);
 
 sio.sockets.on('connection', function(socket) {
