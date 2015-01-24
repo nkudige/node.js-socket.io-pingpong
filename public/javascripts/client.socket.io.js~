@@ -27,5 +27,5 @@ server.on('ping-from-server', function(data) {
 		console.log('Client: Sent pong response to server');
 		document.getElementById("pong-res-2").innerHTML = "PONG!";
 		document.getElementById("pong-sent-c").innerHTML = parseInt(document.getElementById("pong-sent-c").innerHTML) + 1;
-    }, Math.round(500 * Math.random()));
+    }, 200 + Math.round(2000 * Math.random()));
 });
