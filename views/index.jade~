@@ -16,7 +16,7 @@ mixin metric(id, title, footer, id2)
 				h2(id="#{id}")="Waiting..."
 		if footer
 			div.panel-footer=footer
-				h4(id="#{id2}",style="display: inline")=0
+				h4(id="#{id2}",style="display: inline")="0"
 
 block styles
 	//link(rel='stylesheet',href='/stylesheets/dashboard.css')

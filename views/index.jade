@@ -8,12 +8,12 @@ mixin metric(id, title, footer, id2)
 		if title
 			div.panel-heading: h3.panel-title=title
 		div(class="panel-body metric")
-			if id=="ping-req-1"
-				center
+			center
+				if id=="ping-req-1"
 					h1
 					button(id="#{id}", class="btn btn-primary btn-lg") Send Ping
-			else
-				h2(id="#{id}")="Waiting..."
+				else
+					h2(id="#{id}")="Waiting..."
 		if footer
 			div.panel-footer=footer
 				h4(id="#{id2}",style="display: inline")="0"
